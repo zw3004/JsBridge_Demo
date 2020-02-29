@@ -33,6 +33,9 @@
             <input type="button" id="enter2" value="显示html" onclick="testDiv();" />
         </p>
         <p>
+            <input type="button" id="enter5" value="进入百度" onclick="gotoBaidu();" />
+        </p>
+        <p>
             <input type="button" id="enter3" value="关闭Activity" onclick="closeActivity();"
             />
         </p>
@@ -42,6 +45,10 @@
         </p>
     </body>
     <script>
+        function gotoBaidu(){
+            window.location.href="http://www.baidu.com";
+        }
+
         function testDiv() {
             document.getElementById("show").innerHTML = document.getElementsByTagName("html")[0].innerHTML;
         }

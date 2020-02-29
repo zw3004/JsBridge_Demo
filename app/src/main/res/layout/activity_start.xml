@@ -12,6 +12,13 @@
         android:layout_height="48dp"
         />
 
+    <Button
+        android:id="@+id/btnReturnToC"
+        android:layout_width="match_parent"
+        android:text="@string/btnReturnToC_name"
+        android:layout_height="48dp"
+        />
+
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"

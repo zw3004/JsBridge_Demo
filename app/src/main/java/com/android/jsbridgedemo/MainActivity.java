@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.webkit.ValueCallback;
@@ -154,5 +155,15 @@ public class MainActivity extends Activity implements OnClickListener {
         }
 
     }
+    @Override
+    public boolean onKeyDown(int keyCode , KeyEvent keyEvent){
+        if(keyCode==keyEvent.KEYCODE_BACK){//监听返回键，如果可以后退就后退
+            if(webView.canGoBack()){
+                webView.goBack();
+                return true;
+            }
+        }
+        return super.onKeyDown(keyCode, keyEvent);
 
+    }
 }

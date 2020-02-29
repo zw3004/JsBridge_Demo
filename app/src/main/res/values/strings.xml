@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">JsBridgeDemo</string>
     <string name="button_name">Java调用Web</string>
+    <string name="btnReturnToC_name">进入Activity_C</string>
     <string name="btnReturnToB_name">关闭当前Activity</string>
     <string name="btnReturnToA_name">进入Activity_A</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>
